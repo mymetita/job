@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,500&display=swap');
+* {
+    font-family: 'Kanit', sans-serif;
+}
+
+.thai-font {
+    font-family: 'Kanit', sans-serif;
+}
+
+.text-engineer {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 500;
+    color: #A72C32;
+}
+
+.bg-gradient-engineer {
+    background-color: #E31D1A;
+    background-image: linear-gradient(180deg, #E31D1A 10%, #A72C32 100%);
+    background-size: cover;
+}
+
+.bg-gradient-engineer-regist {
+    background-color: #9B3532;
+    background-image: linear-gradient(180deg, #9B3532 20%, #C03933 100%);
+    background-size: cover;
+}
+
+.bg-gradient-faculty {
+    background-color: #414042;
+    background-image: linear-gradient(180deg, #5c5c5c 20%, #414042 100%);
+    background-size: cover;
+}
+
+.bg-login-image {
+    background: url(../img/KMUTT/CMU24924.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-login-stu-image {
+    background: url(../img/KMUTT/CMU24927.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-register-image {
+    background: url(../img/KMUTT/Cover-094504.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-password-image {
+    background: url(../img/KMUTT/IMG_20180830_181006_566.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.black-bg {
+    background-color: #414042;
+}
+
+.btn-black {
+    color: #fff;
+    background-color: #414042;
+    border-color: #414042;
+}
+
+.btn-black:hover {
+    color: #fff;
+    background-color: #2d2c2e;
+    border-color: #2d2c2e;
+}
+
+.btn-black:focus,
+.btn-black.focus {
+    box-shadow: 0 0 0 0.2rem rgba(98, 98, 102, 0.5);
+}
+
+.btn-black.disabled,
+.btn-black:disabled {
+    color: #fff;
+    background-color: #858796;
+    border-color: #858796;
+}
+
+.btn-black:not(:disabled):not(.disabled):active,
+.btn-black:not(:disabled):not(.disabled).active,
+.show>.btn-black.dropdown-toggle {
+    color: #fff;
+    background-color: #6b6d7d;
+    border-color: #656776;
+}
+
+.btn-black:not(:disabled):not(.disabled):active:focus,
+.btn-black:not(:disabled):not(.disabled).active:focus,
+.show>.btn-black.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(92, 92, 95, 0.5);
+}
+
+.required:after {
+    content: " *";
+    color: #cf362e;
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+    color: #fff;
+    border-color: #cf362e;
+    background-color: #cf362e;
+}
+
+
+/*progressbar*/
+
+.md-stepper-horizontal {
+    display: table;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.md-stepper-horizontal .md-step {
+    display: table-cell;
+    position: relative;
+    padding: 24px;
+    padding-bottom: 0px;
+}
+
+.md-stepper-horizontal .md-step:hover,
+.md-stepper-horizontal .md-step:active {
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
+.md-stepper-horizontal .md-step:active {
+    border-radius: 15% / 75%;
+}
+
+.md-stepper-horizontal .md-step:first-child:active {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.md-stepper-horizontal .md-step:last-child:active {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.md-stepper-horizontal .md-step:hover .md-step-circle {
+    background-color: #757575;
+}
+
+.md-stepper-horizontal .md-step:first-child .md-step-bar-left,
+.md-stepper-horizontal .md-step:last-child .md-step-bar-right {
+    display: none;
+}
+
+.md-stepper-horizontal .md-step .md-step-circle {
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    background-color: #d4d4d4;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.md-stepper-horizontal.orange .md-step .active .md-step-circle {
+    background-color: #C03933;
+    border: 3px solid #fff;
+}
+
+.md-stepper-horizontal .md-step.done .md-step-circle:before {
+    font-family: 'FontAwesome';
+    font-weight: 100;
+    content: "\f00c";
+}
+
+.md-stepper-horizontal .md-step.done .md-step-circle *,
+.md-stepper-horizontal .md-step.editable .md-step-circle * {
+    display: none;
+}
+
+.md-stepper-horizontal .md-step.editable .md-step-circle {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.md-stepper-horizontal .md-step.editable .md-step-circle:before {
+    font-family: 'FontAwesome';
+    font-weight: 100;
+    content: "\f040";
+}
+
+.md-stepper-horizontal .md-step .md-step-title {
+    margin-top: 16px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.md-stepper-horizontal .md-step .md-step-title,
+.md-stepper-horizontal .md-step .md-step-optional {
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.md-stepper-horizontal .md-step .active .md-step-title {
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+
+.md-stepper-horizontal .md-step .active.done .md-step-title,
+.md-stepper-horizontal .md-step .active.editable .md-step-title {
+    font-weight: 600;
+}
+
+.md-stepper-horizontal .md-step .md-step-optional {
+    font-size: 12px;
+}
+
+.md-stepper-horizontal .md-step.active .md-step-optional {
+    color: rgba(255, 255, 255, 0.54);
+}
+
+.md-stepper-horizontal .md-step .md-step-bar-left,
+.md-stepper-horizontal .md-step .md-step-bar-right {
+    position: absolute;
+    top: 36px;
+    height: 1px;
+    border-top: 2px solid #DDDDDD;
+}
+
+.md-stepper-horizontal .md-step .md-step-bar-right {
+    right: 0;
+    left: 50%;
+    margin-left: 20px;
+}
+
+.md-stepper-horizontal .md-step .md-step-bar-left {
+    left: 0;
+    right: 50%;
+    margin-right: 20px;
+}
