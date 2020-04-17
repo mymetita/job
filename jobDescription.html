@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Job Fair Faculty of Engineering - Dashboard</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="css/job-eng.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top pt-2">
+        <div class="container">
+            <a class="navbar-brand" href="#">Job Fair - Faculty of Engineering</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">หน้าหลัก</a>
+                        <!-- หน้าบริษัท -->
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#"><i class="far fa-user-circle mr-2"></i>K.Nadech</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Full Page Image Header with Vertically Centered Content -->
+    <header class="bg-head">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 text-center header-item">
+                    <div class="header-caption d-none d-md-block text-left">
+                        <h1 style="font-weight:500; font-size:48px">Put the Right Man <br> on the Right Job</h1>
+                        <hr class="col-3" style="border-top: 2px solid #fff; margin-left: 0px;">
+                        <h2 style="font-size:24px">KMUTT Engineering Online Job Fair</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -- bg-gradient-danger -->
+        <ul class="navbar-nav bg-gradient-engineer-re sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <div class="sidebar-brand-icon">
+                    <!-- rotate-n-15 -->
+                    <i class="fas fa-inbox"></i>
+                </div>
+                <div class="sidebar-brand-text my-3 mx-1"> JobFair x KMUTT </div>
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                ข้อมูลบริษัท
+            </div>
+
+            <!-- Nav Item - profile -->
+            <li class="nav-item">
+                <a class="nav-link" href="profile.html">
+                    <i class="fas fa-fw fa-user-alt"></i>
+                    <span>ข้อมูลเบื้องต้น</span></a>
+            </li>
+
+            <!-- Nav Item - jobDescription -->
+            <li class="nav-item">
+                <a class="nav-link" href="jobDescription.html">
+                    <i class="fas fa-fw fa-building"></i>
+                    <span>ข้อมูลบริษัท/ตำแหน่งที่รับ</span></a>
+            </li>
+
+            <!-- Nav Item - jobFair -->
+            <li class="nav-item active">
+                <a class="nav-link" href="jobFair.html">
+                    <i class="fas fa-fw fa-briefcase"></i>
+                    <span>รายละเอียด Jobfair</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider d-none d-md-block">
+
+            <!-- Sidebar Toggler (Sidebar) -->
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+                <!-- Begin Page Content -->
+                <div class="container-fluid mt-4">
+
+                    <!--- Notification --->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="alert alert-info alert-dismissible fade show" role="alert">
+                                <strong><i class="fas fa-times-circle mr-2"></i> รอการพิจารณาจากทางคณะ (ไม่สามารถแก้ไขข้อมูลได้)</strong>
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Content Row -->
+                    <div class="row">
+                        <div class="col-11 ml-lg-5 m-3 card o-hidden border-0 shadow-lg">
+                            <div class="card-body p-3 container">
+                                <!-- Heading -->
+                                <div class="d-sm-flex align-items-center justify-content-between mb-4 mt-4 px-2 px-lg-4">
+                                    <h2 class="text-engineer">ส่วนที่ 2 ข้อมูลเกี่ยวกับบริษัท/ตำแหน่งที่รับ</h2>
+                                    <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-engineer px-3" style="border-radius: 50px;">
+                                        <i class="fas fa-edit text-white-50"></i> แก้ไขข้อมูล
+                                    </a>
+                                </div>
+                                <!-- Information -->
+                                <div class="row my-4 px-2 px-lg-5">
+                                    <form class="col-12 user">
+                                        <!-- Upload Image --->
+                                        <div class="row mt-2">
+                                            <div class="col-4">
+                                                <img src="img/KMUTT60yrEng.png" class="img-thumbnail">
+                                            </div>
+                                            <div class="col-8">
+                                                <h5 class="mt-3 required"> Display </h5>
+                                                <p class="mb-2">(อัพโหลดรูปประจำตัว เพื่อเพิ่มโอกาสในการรับเข้าสัมภาษณ์)</p>
+                                                <a class="btn btn-secondary btn-user btn-sm" href="#">Choose File</a>
+                                                <p class="my-2">.JPEG, .PNG ขนาดไฟล์ไม่เกิน 1MB</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="row mt-5 mb-2">
+                                            <div class="col-12">
+                                                <label class="h5 required" for="textarea1" disabled="">ข้อมูลเกี่ยวกับบริษัท</label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row mx-2">
+                                            <textarea class="form-control" id="textarea1" rows="10" placeholder="ระบุข้อมูลเกี่ยวกับบริษัท" disabled=""></textarea>
+                                        </div>
+
+                                        <div class="row mt-5 mb-2">
+                                            <div class="col-12">
+                                                <label class="h5 required" for="textarea2">ตำแหน่งที่รับ</label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row mx-2 mb-3">
+                                            <textarea class="form-control" id="textarea2" rows="10" placeholder="ระบุตำแหน่งที่รับ" disabled=""></textarea>
+                                        </div>
+
+                                        <div class="row mt-5 mb-2">
+                                            <div class="col-12 ">
+                                                <h5 class="required">ภาควิชาที่รับ</h5>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 font-weight-normal">
+                                                <div class="form-group row custom-control custom-checkbox custom-control-solid ml-2 ml-sm-4 mb-2 d-flex justify-content-start">
+                                                    <div class="col-6 col-sm-6">
+                                                        <input class="custom-control-input" id="department1" type="checkbox">
+                                                        <label class="custom-control-label" for="department1">ภาควิชาวิศวกรรมเคมี</label>
+                                                    </div>
+                                                    <div class="col-6 col-sm-5">
+                                                        <input class="custom-control-input" id="department2" type="checkbox">
+                                                        <label class="custom-control-label" for="department2">ภาควิชาวิศวกรรมสิ่งแวดล้อม</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row custom-control custom-checkbox custom-control-solid ml-2 ml-sm-4 mb-2 d-flex justify-content-start">
+                                                    <div class="col-6 col-sm-6">
+                                                        <input class="custom-control-input" id="department3" type="checkbox">
+                                                        <label class="custom-control-label" for="department3">ภาควิชาวิศวกรรมโยธา</label>
+                                                    </div>
+                                                    <div class="col-6 col-sm-5">
+                                                        <input class="custom-control-input" id="department4" type="checkbox">
+                                                        <label class="custom-control-label" for="department4">ภาควิชาวิศวกรรมเครื่องกล</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row custom-control custom-checkbox custom-control-solid ml-2 ml-sm-4 mb-2 d-flex justify-content-start">
+                                                    <div class="col-6 col-sm-6">
+                                                        <input class="custom-control-input" id="department5" type="checkbox">
+                                                        <label class="custom-control-label" for="department5">ภาควิชาวิศวกรรมอุตสาการ</label>
+                                                    </div>
+                                                    <div class="col-6 col-sm-5">
+                                                        <input class="custom-control-input" id="department6" type="checkbox">
+                                                        <label class="custom-control-label" for="department6">ภาควิชาวิศวกรรมเครื่องมือและวัสดุ</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row custom-control custom-checkbox custom-control-solid ml-2 ml-sm-4 mb-2 d-flex justify-content-start">
+                                                    <div class="col-6 col-sm-6">
+                                                        <input class="custom-control-input" id="department7" type="checkbox">
+                                                        <label class="custom-control-label" for="department7">ภาควิชาวิศวกรรมอาหาร</label>
+                                                    </div>
+                                                    <div class="col-6 col-sm-5">
+                                                        <input class="custom-control-input" id="department8" type="checkbox">
+                                                        <label class="custom-control-label" for="department8">หลักสูตรวิศวกรรมชีวภาพ</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row custom-control custom-checkbox custom-control-solid ml-2 ml-sm-4 mb-2 d-flex justify-content-start">
+                                                    <div class="col-6 col-sm-6">
+                                                        <input class="custom-control-input" id="department9" type="checkbox">
+                                                        <label class="custom-control-label" for="department9">ภาควิชาวิศวกรรมคอมพิวเตอร์</label>
+                                                    </div>
+                                                    <div class="col-6 col-sm-5">
+                                                        <input class="custom-control-input" id="department10" type="checkbox">
+                                                        <label class="custom-control-label" for="department10">ภาควิชาวิศวกรรมไฟฟ้า</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row custom-control custom-checkbox custom-control-solid ml-2 ml-sm-4 mb-2 d-flex justify-content-start">
+                                                    <div class="col-6 col-sm-6">
+                                                        <input class="custom-control-input" id="department11" type="checkbox">
+                                                        <label class="custom-control-label" for="department11">ภาควิชาวิศวกรรมอิเล็กทรอนิกส์และ
+                                                                โทรคมนาคม</label>
+                                                    </div>
+                                                    <div class="col-6 col-sm-5">
+                                                        <input class="custom-control-input" id="department12" type="checkbox">
+                                                        <label class="custom-control-label" for="department12">ภาควิชาวิศวกรรมระบบควบคุมและ
+                                                                เครื่องมือวัด</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row mt-5">
+                                            <div class="col-12">
+                                                <h5 class="required">โปสเตอร์/โบรชัวร์</h5>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-4">
+                                                <img src="img/KMUTT60yrEng.png" class="img-thumbnail">
+                                            </div>
+                                            <div class="col-8">
+                                                <label for="inputPoster" class="font-weight-normal mt-3">สามารถแนบโปสเตอร์หรือโบรชัวร์ เพื่อแสดงผลใต้ข้อมูล</label>
+                                                <br>
+                                                <a class="btn btn-secondary btn-user btn-sm" href="#">Choose File</a>
+                                                <p class="mb-2 mt-2">.JPEG, .PNG ขนาดไฟล์ไม่เกิน 5MB</p>
+                                            </div>
+                                        </div>
+                                    </form>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /.container-fluid -->
+
+            </div>
+            <!-- End of Main Content -->
+
+            <!-- Footer -->
+            <footer id="sticky-footer" class="sticky-footer py-2 bg-dark text-white-50">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <p class="my-2">Copyright &copy; 2020, Faculty of Engineering KMUTT</p>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of Footer -->
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="vendor/chart.js/Chart.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="js/demo/chart-area-demo.js"></script>
+    <script src="js/demo/chart-pie-demo.js"></script>
+
+    <script>
+        $(window).scroll(function() {
+            if ($(window).scrollTop() >= 100) {
+                $('nav').addClass('navbar-light bg-light shadow ');
+                $('nav').removeClass('navbar-dark shadow');
+            } else {
+                $('nav').addClass('navbar-dark shadow');
+                $('nav').removeClass('bg-light shadow ');
+            }
+        });
+    </script>
+
+
+</body>
+
+</html>

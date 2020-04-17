@@ -30,6 +30,12 @@ body {
     background-size: cover;
 }
 
+.bg-gradient-engineer-re {
+    background-color: #E31D1A;
+    background-image: linear-gradient(0deg, #E31D1A 10%, #A72C32 100%);
+    background-size: cover;
+}
+
 .bg-gradient-engineer-regist {
     background-color: #9B3532;
     background-image: linear-gradient(180deg, #9B3532 20%, #C03933 100%);
@@ -697,4 +703,19 @@ section {
 
 #sticky-footer {
     flex-shrink: none;
+}
+
+::-webkit-scrollbar {
+    width: 18px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 8px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: #C4C4C4;
 }
