@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Job Fair Faculty of Engineering - Dashboard</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="css/job-eng.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+    <!-- Navigation 
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top pt-2">
+        <div class="container">
+            <a class="navbar-brand" href="#">Job Fair - Faculty of Engineering</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">หน้าหลัก</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#"><i class="far fa-user-circle mr-2"></i>K.Engineering</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+-->
+    <!-- Full Page Image Header with Vertically Centered Content -->
+    <!--
+    <header class="bg-head">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 text-center header-item">
+                    <div class="header-caption d-none d-md-block text-left">
+                        <h1 style="font-weight:500; font-size:48px">Put the Right Man <br> on the Right Job</h1>
+                        <hr class="col-3" style="border-top: 2px solid #fff; margin-left: 0px;">
+                        <h2 style="font-size:24px">KMUTT Engineering Online Job Fair</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    -->
+
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -- bg-gradient-danger -->
+        <ul class="navbar-nav bg-gradient-engineer-re sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <div class="sidebar-brand-icon">
+                    <!-- rotate-n-15 -->
+                    <i class="fas fa-inbox"></i>
+                </div>
+                <div class="sidebar-brand-text my-3 mx-1"> JobFair x KMUTT </div>
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item active">
+                <a class="nav-link" href="dashboard.html">
+                    <i class="fas fa-fw fa-list"></i>
+                    <span>คำขอทั้งหมด</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+            <!-- Nav Item - waiting -->
+            <li class="nav-item">
+                <a class="nav-link" href="dashboard.html">
+                    <i class="fas fa-fw fa-pause-circle"></i>
+                    <span>รอการอนุมัติ</span></a>
+            </li>
+
+            <!-- Nav Item - approve -->
+            <li class="nav-item">
+                <a class="nav-link" href="dashboard.html">
+                    <i class="fas fa-fw fa-check-circle"></i>
+                    <span>อนุมัติ</span></a>
+            </li>
+
+            <!-- Nav Item - reject -->
+            <li class="nav-item">
+                <a class="nav-link" href="dashboard.html">
+                    <i class="fas fa-fw fa-times-circle"></i>
+                    <span>ไม่อนุมัติ</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider d-none d-md-block">
+
+            <!-- Sidebar Toggler (Sidebar) -->
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                    <i class="fa fa-bars"></i>
+                    </button>
+
+                    <!-- Topbar Navbar -->
+                    <div class="navbar-nav ml-auto">
+
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link" href="index2.html">
+                                <span class="mr-2 d-none d-lg-inline text-gray-600">หน้าหลัก</span>
+                            </a>
+                        </li>
+
+                        <div class="topbar-divider d-none d-sm-block"></div>
+
+                        <!-- Nav Item - User Information -->
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-user-circle mr-2 text-gray-600"></i>
+                                <span class="mr-2 d-none d-lg-inline text-gray-600">K.Engineer</span>
+                            </a>
+                            <!-- Dropdown - User Information -->
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i> Logout
+                                </a>
+                            </div>
+                        </li>
+
+                    </div>
+
+                </nav>
+                <!-- End of Topbar -->
+
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid mt-4 h-100">
+
+                    <!-- Page Heading -->
+                    <div class="d-sm-flex align-items-center justify-content-between mx-3 py-3 mb-3">
+                        <h1 class="h2 mb-0 text-engineer">
+                            <!--<i class="fas fa-arrow-left"></i>-->
+                            <a href='dashboard.html' class="text-engineer"><i class="fas fa-chevron-left"></i></a> คำขอทั้งหมด
+                        </h1>
+                        <div class="form-group has-search mb-0">
+                            <span class="fas fa-search form-control-feedback"></span>
+                            <input type="text" class="form-control" value="" placeholder="ค้นหา ชื่อบริษัท">
+                        </div>
+                    </div>
+
+                    <!-- Content Row -->
+                    <div class="row my-2 my-lg-3">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="card bg-black border-0 shadow-lg container-fluid">
+                                        <div class="row my-2">
+                                            <div class="col-8 offset-lg-1 col-lg-7 d-flex align-items-center">
+                                                <h5 class="text-white mb-0">18-04-20 23:59 บริษัท ซีพี ออลล์ จำกัด</h5>
+                                            </div>
+                                            <div class="col-4 align-content-end text-center">
+                                                <span class="badge badge-primary badge-pill"><h5 class="mx-4 mb-0">รอการอนุมัติ</h5></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.container-fluid -->
+
+                    <div class="row">
+                        <div class="container-fluid">
+
+                            <div class="row card border-0 shadow-lg mx-2 my-2 mb-5" id="step-1">
+                                <div class="col-12 my-4">
+                                    <div class="card-body p-0 container">
+                                        <div class="row mt-4 ">
+                                            <div class="col-12">
+                                                <h2 class="text-engineer ">ส่วนที่ 1 ข้อมูลเบื้องต้น</h2>
+                                            </div>
+                                        </div>
+                                        <div class="row my-4 ">
+                                            <form class="col-12 user">
+                                                <div class="form-group">
+                                                    <label for="inputEmail" class="font-weight-bold">E-mail (ใช้สำหรับการ Login เข้าสู่ระบบ)</label>
+                                                    <input type="email " class="form-control form-control-user " id="inputEmail " placeholder="Email Address " style="padding: 1.2rem 1rem;">
+                                                </div>
+                                                <div class="form-group row">
+                                                    <div class="col-sm-6 mb-3 mb-sm-0 ">
+                                                        <label for="inputPassword" class="font-weight-normal">รหัสผ่าน</label>
+                                                        <input type="password " class="form-control form-control-user " id="inputPassword " placeholder="Password " style="padding: 1.2rem 1rem;">
+                                                    </div>
+                                                    <div class="col-sm-6 ">
+                                                        <label for="repeatPassword" class="font-weight-normal">ยืนยันรหัสผ่าน</label>
+                                                        <input type="password " class="form-control form-control-user " id="repeatPassword " placeholder="Repeat Password " style="padding: 1.2rem 1rem;">
+                                                    </div>
+                                                </div>
+
+                                                <div class="row mt-5">
+                                                    <div class="col-12 ">
+                                                        <h5 class="required">ผู้ประสานงาน</h5>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row ">
+                                                    <div class="col-sm-6 mb-3 mb-sm-0 ">
+                                                        <label for="firstName">ชื่อ</label>
+                                                        <input type="text " class="form-control form-control-user " id="firstName " placeholder="First Name " style="padding: 1.2rem 1rem;">
+                                                    </div>
+                                                    <div class="col-sm-6 ">
+                                                        <label for="lastName">นามสกุล</label>
+                                                        <input type="text " class="form-control form-control-user " id="lastName " placeholder="Last Name " style="padding: 1.2rem 1rem;">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row ">
+                                                    <div class="col-sm-12 mb-3 mb-sm-0 ">
+                                                        <label for="position">ตำแหน่ง</label>
+                                                        <input type="text " class="form-control form-control-user " id="position " placeholder="Position " style="padding: 1.2rem 1rem;">
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group row mt-5">
+                                                    <div class="col-sm-12 mb-3 mb-sm-0 ">
+                                                        <label for="corporate_name_th" class="required">ชื่อสถานประกอบการ (ภาษาไทย) </label>
+                                                        <input type="text " class="form-control form-control-user " id="corporate_name_th" placeholder=" " style="padding: 1.2rem 1rem;">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row mb-3">
+                                                    <div class="col-sm-12 mb-3 mb-sm-0 ">
+                                                        <label for="corporate_name_en" class="required">ชื่อสถานประกอบการ (ภาษาอังกฤษ) </label>
+                                                        <input type="text " class="form-control form-control-user " id="corporate_name_en" placeholder=" " style="padding: 1.2rem 1rem;">
+                                                    </div>
+                                                </div>
+
+                                                <div class="row mt-5 mb-2">
+                                                    <div class="col-12 ">
+                                                        <h5 class="required">กลุ่มอุตสาหกรรม</h5>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12 font-weight-normal">
+                                                        <div class="form-group row custom-control custom-radio ml-2">
+                                                            <div class="col-12">
+                                                                <input class="custom-control-input" id="industryRadio1" type="radio" name="industryRadio">
+                                                                <label class="custom-control-label" for="industryRadio1">สินค้าอุตสาหกรรม</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row custom-control custom-radio ml-2">
+                                                            <div class="col-12">
+                                                                <input class="custom-control-input" id="industryRadio2" type="radio" name="industryRadio">
+                                                                <label class="custom-control-label" for="industryRadio2">สินค้าอุปโภคบริโภค</label></div>
+                                                        </div>
+                                                        <div class="form-group row custom-control custom-radio ml-2">
+                                                            <div class="col-12">
+                                                                <input class="custom-control-input" id="industryRadio3" type="radio" name="industryRadio">
+                                                                <label class="custom-control-label" for="industryRadio3">ธุรกิจการเงิน</label></div>
+                                                        </div>
+                                                        <div class="form-group row custom-control custom-radio ml-2">
+                                                            <div class="col-12">
+                                                                <input class="custom-control-input" id="industryRadio4" type="radio" name="industryRadio">
+                                                                <label class="custom-control-label" for="industryRadio4">อสังหาริมทรัพย์และก่อสร้าง</label></div>
+                                                        </div>
+                                                        <div class="form-group row custom-control custom-radio ml-2">
+                                                            <div class="col-12">
+                                                                <input class="custom-control-input" id="industryRadio5" type="radio" name="industryRadio">
+                                                                <label class="custom-control-label" for="industryRadio5">เกษตรและอุตสาหกรรมอาหาร</label></div>
+                                                        </div>
+                                                        <div class="form-group row custom-control custom-radio ml-2">
+                                                            <div class="col-12">
+                                                                <input class="custom-control-input" id="industryRadio6" type="radio" name="industryRadio">
+                                                                <label class="custom-control-label" for="industryRadio6">ทรัพยากร</label></div>
+                                                        </div>
+                                                        <div class="form-group row custom-control custom-radio ml-2">
+                                                            <div class="col-12">
+                                                                <input class="custom-control-input" id="industryRadio7" type="radio" name="industryRadio">
+                                                                <label class="custom-control-label" for="industryRadio7">บริการ</label></div>
+                                                        </div>
+                                                        <div class="form-group row custom-control custom-radio ml-2">
+                                                            <div class="col-12">
+                                                                <input class="custom-control-input" id="industryRadio8" type="radio" name="industryRadio">
+                                                                <label class="custom-control-label" for="industryRadio8">เทคโนโลยี</label></div>
+                                                        </div>
+                                                        <div class="form-group row custom-control custom-radio ml-2">
+                                                            <div class="col-1">
+                                                                <input class="custom-control-input" id="industryRadio9" type="radio" name="industryRadio">
+                                                                <label class="custom-control-label" for="industryRadio9">อื่นๆ </label>
+                                                            </div>
+                                                            <div class="col-3">
+                                                                <input type="text " class="form-control form-control-user " id="industryRadio9_data" placeholder="" style="padding: 1.2rem 1rem;">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row mt-5">
+                                                    <div class="col-12 ">
+                                                        <h5 class="required">สถานที่ตั้ง</h5>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="inputStreet" class="font-weight-normal">อาคาร/ถนน</label>
+                                                    <input type="text" class="form-control form-control-user " id="inputStreet" placeholder="เลขที่, ชั้น, อาคาร, ถนน, อื่นๆ" style="padding: 1.2rem 1rem;">
+                                                </div>
+                                                <div class="form-group row">
+                                                    <div class="col-sm-6 mb-3 mb-sm-0 ">
+                                                        <label for="inputCity" class="font-weight-normal">จังหวัด</label>
+                                                        <select class="form-control" id="inputCity" style="border-radius: 10rem;">
+                                                                        <option>1</option>
+                                                                        <option>2</option>
+                                                                        <option>3</option>
+                                                                        <option>4</option>
+                                                                        <option>5</option>
+                                                                    </select>
+                                                    </div>
+                                                    <div class="col-sm-6 ">
+                                                        <label for="inputArea" class="font-weight-normal">แขวง/เขต</label>
+                                                        <select class="form-control" id="inputArea" style="border-radius: 10rem;">
+                                                                        <option>1</option>
+                                                                        <option>2</option>
+                                                                        <option>3</option>
+                                                                        <option>4</option>
+                                                                        <option>5</option>
+                                                                    </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <div class="col-sm-6 mb-3 mb-sm-0 ">
+                                                        <label for="inputPost" class="font-weight-normal">รหัสไปรษณีย์</label>
+                                                        <input type="text" class="form-control form-control-user " id="inputPost" placeholder="" style="padding: 1.2rem 1rem;">
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Step 2 -->
+                            <div class="row card border-0 shadow-lg mx-2 my-2 mb-5" id="step-2">
+                                <div class="col-12 my-4">
+                                    <div class="card-body p-0 container">
+                                        <div class="row mt-4 ">
+                                            <div class="col-12">
+                                                <h2 class="text-engineer ">ส่วนที่ 2 ข้อมูลเกี่ยวกับบริษัท/ตำแหน่งที่รับ
+                                                </h2>
+                                            </div>
+                                        </div>
+                                        <div class="row my-4">
+                                            <form class="col-12 user">
+                                                <!-- Upload Image --->
+                                                <div class="row mt-2">
+                                                    <div class="col-3">
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <h5 class="required">Display</h5>
+                                                        <p class="mb-2">.JPEG, .PNG ขนาดไฟล์ไม่เกิน 5MB</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row mt-5 mb-2">
+                                                    <div class="col-12">
+                                                        <label class="h5 required" for="textarea1">ข้อมูลเกี่ยวกับบริษัท</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row mx-2">
+                                                    <textarea class="form-control" id="textarea1" rows="10" placeholder="ระบุข้อมูลเกี่ยวกับบริษัท"></textarea>
+                                                </div>
+
+                                                <div class="row mt-5 mb-2">
+                                                    <div class="col-12">
+                                                        <label class="h5 required" for="textarea2">ตำแหน่งที่รับ</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row mx-2 mb-3">
+                                                    <textarea class="form-control" id="textarea2" rows="10" placeholder="ระบุตำแหน่งที่รับ "></textarea>
+                                                </div>
+
+                                                <div class="row mt-5 mb-2">
+                                                    <div class="col-12 ">
+                                                        <h5 class="required">ภาควิชาที่รับ</h5>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12 font-weight-normal">
+                                                        <div class="form-group row custom-control custom-checkbox custom-control-solid ml-2 ml-sm-4 mb-2 d-flex justify-content-start">
+                                                            <div class="col-6 col-sm-6">
+                                                                <input class="custom-control-input" id="department1" type="checkbox">
+                                                                <label class="custom-control-label" for="department1">ภาควิชาวิศวกรรมเคมี</label>
+                                                            </div>
+                                                            <div class="col-6 col-sm-5">
+                                                                <input class="custom-control-input" id="department2" type="checkbox">
+                                                                <label class="custom-control-label" for="department2">ภาควิชาวิศวกรรมสิ่งแวดล้อม</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row custom-control custom-checkbox custom-control-solid ml-2 ml-sm-4 mb-2 d-flex justify-content-start">
+                                                            <div class="col-6 col-sm-6">
+                                                                <input class="custom-control-input" id="department3" type="checkbox">
+                                                                <label class="custom-control-label" for="department3">ภาควิชาวิศวกรรมโยธา</label>
+                                                            </div>
+                                                            <div class="col-6 col-sm-5">
+                                                                <input class="custom-control-input" id="department4" type="checkbox">
+                                                                <label class="custom-control-label" for="department4">ภาควิชาวิศวกรรมเครื่องกล</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row custom-control custom-checkbox custom-control-solid ml-2 ml-sm-4 mb-2 d-flex justify-content-start">
+                                                            <div class="col-6 col-sm-6">
+                                                                <input class="custom-control-input" id="department5" type="checkbox">
+                                                                <label class="custom-control-label" for="department5">ภาควิชาวิศวกรรมอุตสาการ</label>
+                                                            </div>
+                                                            <div class="col-6 col-sm-5">
+                                                                <input class="custom-control-input" id="department6" type="checkbox">
+                                                                <label class="custom-control-label" for="department6">ภาควิชาวิศวกรรมเครื่องมือและวัสดุ</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row custom-control custom-checkbox custom-control-solid ml-2 ml-sm-4 mb-2 d-flex justify-content-start">
+                                                            <div class="col-6 col-sm-6">
+                                                                <input class="custom-control-input" id="department7" type="checkbox">
+                                                                <label class="custom-control-label" for="department7">ภาควิชาวิศวกรรมอาหาร</label>
+                                                            </div>
+                                                            <div class="col-6 col-sm-5">
+                                                                <input class="custom-control-input" id="department8" type="checkbox">
+                                                                <label class="custom-control-label" for="department8">หลักสูตรวิศวกรรมชีวภาพ</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row custom-control custom-checkbox custom-control-solid ml-2 ml-sm-4 mb-2 d-flex justify-content-start">
+                                                            <div class="col-6 col-sm-6">
+                                                                <input class="custom-control-input" id="department9" type="checkbox">
+                                                                <label class="custom-control-label" for="department9">ภาควิชาวิศวกรรมคอมพิวเตอร์</label>
+                                                            </div>
+                                                            <div class="col-6 col-sm-5">
+                                                                <input class="custom-control-input" id="department10" type="checkbox">
+                                                                <label class="custom-control-label" for="department10">ภาควิชาวิศวกรรมไฟฟ้า</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row custom-control custom-checkbox custom-control-solid ml-2 ml-sm-4 mb-2 d-flex justify-content-start">
+                                                            <div class="col-6 col-sm-6">
+                                                                <input class="custom-control-input" id="department11" type="checkbox">
+                                                                <label class="custom-control-label" for="department11">ภาควิชาวิศวกรรมอิเล็กทรอนิกส์และ
+                                                                                โทรคมนาคม</label>
+                                                            </div>
+                                                            <div class="col-6 col-sm-5">
+                                                                <input class="custom-control-input" id="department12" type="checkbox">
+                                                                <label class="custom-control-label" for="department12">ภาควิชาวิศวกรรมระบบควบคุมและ
+                                                                                เครื่องมือวัด</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row mt-5">
+                                                    <div class="col-12 ">
+                                                        <h5 class="required">โปสเตอร์/โบรชัวร์</h5>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <div class="col-1">
+                                                    </div>
+                                                    <div class="col-10">
+                                                        <label for="inputPoster" class="font-weight-normal">สามารถแนบโปสเตอร์หรือโบรชัวร์ เพื่อแสดงผลใต้ข้อมูล</label>
+                                                        <p class="mb-2">.JPEG, .PNG ขนาดไฟล์ไม่เกิน 5MB</p>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Step 3 -->
+                            <div class="row card border-0 shadow-lg mx-2 my-2 mb-5" id="step-3">
+                                <div class="col-12 my-4">
+                                    <div class="card-body p-0 container">
+                                        <div class="row mt-4 ">
+                                            <div class="col-12">
+                                                <h2 class="text-engineer">ส่วนที่ 3 ข้อมูล Job Fair
+                                                </h2>
+                                            </div>
+                                        </div>
+                                        <div class="row my-4">
+                                            <form class="col-12 user">
+                                                <div class="form-group row custom-control custom-radio ml-2">
+                                                    <div class="col-12">
+                                                        <input class="custom-control-input" id="meetingRadio1" type="radio" name="meetingRadio">
+                                                        <label class="h5 custom-control-label text-engineer" for="meetingRadio1">มี Meeting Online ในวันเวลาดังกล่าว</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group custom-control custom-checkbox custom-control-solid ml-3 ml-sm-5 mb-4">
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <input class="custom-control-input" id="date11" type="checkbox">
+                                                            <label class="custom-control-label" for="date11">วันจันทร์ที่ 27 เมษายน 2563</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row my-2">
+                                                        <div class="offset-1 col-10 d-flex align-items-center justify-content-start">
+                                                            <div class="col-2">
+                                                                <input class="custom-control-input" id="date11_morning" type="checkbox">
+                                                                <label class="custom-control-label" for="date11_morning"><i class="far fa-clock"></i> ช่วงเช้า</label>
+                                                            </div>
+                                                            <div class="col-5 col-sm-4 mb-3 mb-sm-0 ">
+                                                                <select class="form-control" id="date11_morning_start" style="border-radius: 10rem;">
+                                                                                <option>09.00</option>
+                                                                                <option>10.00</option>
+                                                                                <option>11.00</option>
+                                                                                <option>12.00</option>
+                                                                            </select>
+                                                            </div>
+                                                            <div class="">ถึง</div>
+                                                            <div class="col-5 col-sm-4 ">
+                                                                <select class="form-control" id="date11_morning_end" style="border-radius: 10rem;">
+                                                                                <option>13.00</option>
+                                                                                <option>14.00</option>
+                                                                                <option>15.00</option>
+                                                                                <option>16.00</option>
+                                                                            </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <div class="offset-1 col-10">
+                                                            <label for="date11_morning_inputLink" class="font-weight-normal">Link (Optional)</label>
+                                                            <input type="text" class="form-control col-10 form-control-user " id="date11_morning_inputLink" placeholder="Link Meeting Room " style="padding: 1.2rem 1rem;">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row my-2">
+                                                        <div class="offset-1 col-10 d-flex align-items-center justify-content-start">
+                                                            <div class="col-2">
+                                                                <input class="custom-control-input" id="date11_afternoon" type="checkbox">
+                                                                <label class="custom-control-label" for="date11_afternoon"><i class="far fa-clock"></i> ช่วงบ่าย</label>
+                                                            </div>
+                                                            <div class="col-5 col-sm-4 mb-3 mb-sm-0 ">
+                                                                <select class="form-control" id="date11_afternoon_start" style="border-radius: 10rem;">
+                                                                                <option>09.00</option>
+                                                                                <option>10.00</option>
+                                                                                <option>11.00</option>
+                                                                                <option>12.00</option>
+                                                                            </select>
+                                                            </div>
+                                                            <div class="">ถึง</div>
+                                                            <div class="col-5 col-sm-4 ">
+                                                                <select class="form-control" id="date11_afternoon_end" style="border-radius: 10rem;">
+                                                                                <option>13.00</option>
+                                                                                <option>14.00</option>
+                                                                                <option>15.00</option>
+                                                                                <option>16.00</option>
+                                                                            </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row custom-control custom-checkbox custom-control-solid ml-3 ml-sm-5 mb-2">
+                                                        <div class="col-12 ml-3">
+                                                            <input class="custom-control-input" id="date11_same" type="checkbox">
+                                                            <label class="custom-control-label" for="date11_same">Link เหมือนช่วงเช้า</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <div class="offset-1 col-10">
+                                                            <label for="date11_afternoon_inputLink" class="font-weight-normal ml-3">Link (Optional)</label>
+                                                            <input type="text" class="form-control col-10 form-control-user " id="date11_afternoon_inputLink" placeholder="Link Meeting Room " style="padding: 1.2rem 1rem;">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group custom-control custom-checkbox custom-control-solid ml-3 ml-sm-5 mb-4">
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <input class="custom-control-input" id="date12" type="checkbox">
+                                                            <label class="custom-control-label" for="date12">วันอังคารที่ 28 เมษายน 2563</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row my-2">
+                                                        <div class="offset-1 col-10 d-flex align-items-center justify-content-start">
+                                                            <div class="col-2">
+                                                                <input class="custom-control-input" id="date12_morning" type="checkbox">
+                                                                <label class="custom-control-label" for="date12_morning"><i class="far fa-clock"></i> ช่วงเช้า</label>
+                                                            </div>
+                                                            <div class="col-5 col-sm-4 mb-3 mb-sm-0 ">
+                                                                <select class="form-control" id="date12_morning_start" style="border-radius: 10rem;">
+                                                                                <option>09.00</option>
+                                                                                <option>10.00</option>
+                                                                                <option>11.00</option>
+                                                                                <option>12.00</option>
+                                                                            </select>
+                                                            </div>
+                                                            <div class="">ถึง</div>
+                                                            <div class="col-5 col-sm-4 ">
+                                                                <select class="form-control" id="date12_morning_end" style="border-radius: 10rem;">
+                                                                                <option>13.00</option>
+                                                                                <option>14.00</option>
+                                                                                <option>15.00</option>
+                                                                                <option>16.00</option>
+                                                                            </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <div class="offset-1 col-10">
+                                                            <label for="date11_morning_inputLink" class="font-weight-normal">Link (Optional)</label>
+                                                            <input type="text" class="form-control col-10 form-control-user " id="date12_morning_inputLink" placeholder="Link Meeting Room " style="padding: 1.2rem 1rem;">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row my-2">
+                                                        <div class="offset-1 col-10 d-flex align-items-center justify-content-start">
+                                                            <div class="col-2">
+                                                                <input class="custom-control-input" id="date12_afternoon" type="checkbox">
+                                                                <label class="custom-control-label" for="date12_afternoon"><i class="far fa-clock"></i> ช่วงบ่าย</label>
+                                                            </div>
+                                                            <div class="col-5 col-sm-4 mb-3 mb-sm-0 ">
+                                                                <select class="form-control" id="date12_afternoon_start" style="border-radius: 10rem;">
+                                                                                <option>09.00</option>
+                                                                                <option>10.00</option>
+                                                                                <option>11.00</option>
+                                                                                <option>12.00</option>
+                                                                            </select>
+                                                            </div>
+                                                            <div class="">ถึง</div>
+                                                            <div class="col-5 col-sm-4 ">
+                                                                <select class="form-control" id="date12_afternoon_end" style="border-radius: 10rem;">
+                                                                                <option>13.00</option>
+                                                                                <option>14.00</option>
+                                                                                <option>15.00</option>
+                                                                                <option>16.00</option>
+                                                                            </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row custom-control custom-checkbox custom-control-solid ml-3 ml-sm-5 mb-2">
+                                                        <div class="col-12 ml-3">
+                                                            <input class="custom-control-input" id="date12_same" type="checkbox">
+                                                            <label class="custom-control-label" for="date12_same">Link เหมือนช่วงเช้า</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <div class="offset-1 col-10">
+                                                            <label for="date11_afternoon_inputLink" class="font-weight-normal ml-3">Link (Optional)</label>
+                                                            <input type="text" class="form-control col-10 form-control-user " id="date12_afternoon_inputLink" placeholder="Link Meeting Room " style="padding: 1.2rem 1rem;">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group row mt-4">
+                                                    <div class="form-group row custom-control custom-radio ml-2">
+                                                        <div class="col-12">
+                                                            <input class="custom-control-input" id="meetingRadio2" type="radio" name="meetingRadio">
+                                                            <label class="h5 custom-control-label text-engineer" for="meetingRadio2">ไม่มี  Meeting Online</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Step 4 -->
+                            <div class="row card border-0 shadow-lg mx-2 my-2 mb-5" id="step-4">
+                                <div class="col-12 my-4">
+                                    <div class="card-body p-0 container">
+                                        <div class="row mt-4 ">
+                                            <div class="col-12">
+                                                <h2 class="text-engineer">ส่วนที่ 4 ตรวจสอบและบันทึกข้อมูล
+                                                </h2>
+                                            </div>
+                                        </div>
+                                        <div class="row my-4">
+                                            <form class="col-12 user">
+                                                <div class="form-group">
+                                                    <label for="inputEmail" class="font-weight-bold">E-mail (ใช้สำหรับการ Login เข้าสู่ระบบ)</label>
+                                                    <input type="email " class="form-control form-control-user " id="inputEmail " placeholder="Email Address " style="padding: 1.2rem 1rem;">
+                                                </div>
+                                                <div class="form-group row">
+                                                    <div class="col-sm-6 mb-3 mb-sm-0 ">
+                                                        <label for="inputPassword" class="font-weight-normal">รหัสผ่าน</label>
+                                                        <input type="password " class="form-control form-control-user " id="inputPassword " placeholder="Password " style="padding: 1.2rem 1rem;">
+                                                    </div>
+                                                    <div class="col-sm-6 ">
+                                                        <label for="repeatPassword" class="font-weight-normal">ยืนยันรหัสผ่าน</label>
+                                                        <input type="password " class="form-control form-control-user " id="repeatPassword " placeholder="Repeat Password " style="padding: 1.2rem 1rem;">
+                                                    </div>
+                                                </div>
+
+                                                <div class="row mt-5">
+                                                    <div class="col-12 ">
+                                                        <h5 class="required">ผู้ประสานงาน</h5>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row ">
+                                                    <div class="col-sm-6 mb-3 mb-sm-0 ">
+                                                        <label for="firstName">ชื่อ</label>
+                                                        <input type="text " class="form-control form-control-user " id="firstName " placeholder="First Name " style="padding: 1.2rem 1rem;">
+                                                    </div>
+                                                    <div class="col-sm-6 ">
+                                                        <label for="lastName">นามสกุล</label>
+                                                        <input type="text " class="form-control form-control-user " id="lastName " placeholder="Last Name " style="padding: 1.2rem 1rem;">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row ">
+                                                    <div class="col-sm-12 mb-3 mb-sm-0 ">
+                                                        <label for="position">ตำแหน่ง</label>
+                                                        <input type="text " class="form-control form-control-user " id="position " placeholder="Position " style="padding: 1.2rem 1rem;">
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group row mt-5">
+                                                    <div class="col-sm-12 mb-3 mb-sm-0 ">
+                                                        <label for="corporate_name_th" class="required">ชื่อสถานประกอบการ (ภาษาไทย) </label>
+                                                        <input type="text " class="form-control form-control-user " id="corporate_name_th" placeholder=" " style="padding: 1.2rem 1rem;">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row mb-3">
+                                                    <div class="col-sm-12 mb-3 mb-sm-0 ">
+                                                        <label for="corporate_name_en" class="required">ชื่อสถานประกอบการ (ภาษาอังกฤษ) </label>
+                                                        <input type="text " class="form-control form-control-user " id="corporate_name_en" placeholder=" " style="padding: 1.2rem 1rem;">
+                                                    </div>
+                                                </div>
+
+                                                <div class="row mt-5 mb-2">
+                                                    <div class="col-12 ">
+                                                        <h5 class="required">กลุ่มอุตสาหกรรม</h5>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12 font-weight-normal">
+                                                        <div class="form-group row custom-control custom-radio ml-2">
+                                                            <div class="col-12">
+                                                                <input class="custom-control-input" id="industryRadio1" type="radio" name="industryRadio">
+                                                                <label class="custom-control-label" for="industryRadio1">สินค้าอุตสาหกรรม</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row custom-control custom-radio ml-2">
+                                                            <div class="col-12">
+                                                                <input class="custom-control-input" id="industryRadio2" type="radio" name="industryRadio">
+                                                                <label class="custom-control-label" for="industryRadio2">สินค้าอุปโภคบริโภค</label></div>
+                                                        </div>
+                                                        <div class="form-group row custom-control custom-radio ml-2">
+                                                            <div class="col-12">
+                                                                <input class="custom-control-input" id="industryRadio3" type="radio" name="industryRadio">
+                                                                <label class="custom-control-label" for="industryRadio3">ธุรกิจการเงิน</label></div>
+                                                        </div>
+                                                        <div class="form-group row custom-control custom-radio ml-2">
+                                                            <div class="col-12">
+                                                                <input class="custom-control-input" id="industryRadio4" type="radio" name="industryRadio">
+                                                                <label class="custom-control-label" for="industryRadio4">อสังหาริมทรัพย์และก่อสร้าง</label></div>
+                                                        </div>
+                                                        <div class="form-group row custom-control custom-radio ml-2">
+                                                            <div class="col-12">
+                                                                <input class="custom-control-input" id="industryRadio5" type="radio" name="industryRadio">
+                                                                <label class="custom-control-label" for="industryRadio5">เกษตรและอุตสาหกรรมอาหาร</label></div>
+                                                        </div>
+                                                        <div class="form-group row custom-control custom-radio ml-2">
+                                                            <div class="col-12">
+                                                                <input class="custom-control-input" id="industryRadio6" type="radio" name="industryRadio">
+                                                                <label class="custom-control-label" for="industryRadio6">ทรัพยากร</label></div>
+                                                        </div>
+                                                        <div class="form-group row custom-control custom-radio ml-2">
+                                                            <div class="col-12">
+                                                                <input class="custom-control-input" id="industryRadio7" type="radio" name="industryRadio">
+                                                                <label class="custom-control-label" for="industryRadio7">บริการ</label></div>
+                                                        </div>
+                                                        <div class="form-group row custom-control custom-radio ml-2">
+                                                            <div class="col-12">
+                                                                <input class="custom-control-input" id="industryRadio8" type="radio" name="industryRadio">
+                                                                <label class="custom-control-label" for="industryRadio8">เทคโนโลยี</label></div>
+                                                        </div>
+                                                        <div class="form-group row custom-control custom-radio ml-2">
+                                                            <div class="col-1">
+                                                                <input class="custom-control-input" id="industryRadio9" type="radio" name="industryRadio">
+                                                                <label class="custom-control-label" for="industryRadio9">อื่นๆ </label>
+                                                            </div>
+                                                            <div class="col-3">
+                                                                <input type="text " class="form-control form-control-user " id="industryRadio9_data" placeholder="" style="padding: 1.2rem 1rem;">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row mt-5">
+                                                    <div class="col-12 ">
+                                                        <h5 class="required">สถานที่ตั้ง</h5>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="inputStreet" class="font-weight-normal">อาคาร/ถนน</label>
+                                                    <input type="text" class="form-control form-control-user " id="inputStreet" placeholder="เลขที่, ชั้น, อาคาร, ถนน, อื่นๆ" style="padding: 1.2rem 1rem;">
+                                                </div>
+                                                <div class="form-group row">
+                                                    <div class="col-sm-6 mb-3 mb-sm-0 ">
+                                                        <label for="inputCity" class="font-weight-normal">จังหวัด</label>
+                                                        <select class="form-control" id="inputCity" style="border-radius: 10rem;">
+                                                                            <option>1</option>
+                                                                            <option>2</option>
+                                                                            <option>3</option>
+                                                                            <option>4</option>
+                                                                            <option>5</option>
+                                                                        </select>
+                                                    </div>
+                                                    <div class="col-sm-6 ">
+                                                        <label for="inputArea" class="font-weight-normal">แขวง/เขต</label>
+                                                        <select class="form-control" id="inputArea" style="border-radius: 10rem;">
+                                                                            <option>1</option>
+                                                                            <option>2</option>
+                                                                            <option>3</option>
+                                                                            <option>4</option>
+                                                                            <option>5</option>
+                                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <div class="col-sm-6 mb-3 mb-sm-0 ">
+                                                        <label for="inputPost" class="font-weight-normal">รหัสไปรษณีย์</label>
+                                                        <input type="text" class="form-control form-control-user " id="inputPost" placeholder="" style="padding: 1.2rem 1rem;">
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <form class="col-12 offset-sm-1 col-sm-10 user mb-5">
+                                <div class="row my-4 d-flex justify-content-between">
+                                    <div class="col-2">
+                                        <a href="#" class="btn btn-black btn-user btn-block">
+                                            <h5 class="mb-0">ยกเลิก</h5>
+                                        </a>
+                                    </div>
+                                    <div class="col-2">
+                                        <a href="#" class="btn btn-engineer btn-user btn-block" data-toggle="modal" data-target="#reject-modal">
+                                            <h5 class="mb-0">ไม่อนุมัติ</h5>
+                                        </a>
+                                    </div>
+                                    <div class="col-2">
+                                        <a href="#" class="btn btn-success btn-user btn-block" data-toggle="modal" data-target="#approve-modal">
+                                            <h5 class="mb-0">อนุมัติ</h5>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- End of Main Content -->
+
+                <!-- Footer -->
+                <footer id="sticky-footer" class="sticky-footer py-2 bg-dark text-white-50">
+                    <div class="container my-auto">
+                        <div class="copyright text-center my-auto">
+                            <p class="my-2">Copyright &copy; 2020, Faculty of Engineering KMUTT</p>
+                        </div>
+                    </div>
+                </footer>
+                <!-- End of Footer -->
+
+            </div>
+            <!-- End of Content Wrapper -->
+
+        </div>
+        <!-- End of Page Wrapper -->
+
+        <!-- Scroll to Top Button-->
+        <a class="scroll-to-top rounded" href="#page-top">
+            <i class="fas fa-angle-up"></i>
+        </a>
+
+        <!--- Modal - reject --->
+        <div class="modal fade" id="reject-modal" tabindex="-1" role="dialog" aria-labelledby="modalCenter-R" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                    </div>
+                    <div class="modal-body">
+                        <h1 class="text-center"><i class="far fa-5x fa-times-circle text-danger"></i></h1>
+                        <h3 class="modal-title text-center" id="modalCenter-R">ท่านต้องการที่จะthe <b class=" text-danger">ไม่อนุมัติ</b> คำขอนี้</h3>
+                    </div>
+                    <div class="modal-footer d-flex justify-content-lg-between">
+                        <button type="button" class="btn btn-outline-secondary btn-block" data-dismiss="modal">ยกเลิก</button>
+                        <button type="button" class="btn btn-danger btn-block mt-0">ไม่อนุมัติคำขอ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--- Modal - approve --->
+        <div class="modal fade" id="approve-modal" tabindex="-1" role="dialog" aria-labelledby="modalCenter-A" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                    </div>
+                    <div class="modal-body">
+                        <h1 class="text-center"><i class="far fa-5x fa-check-circle text-success"></i></h1>
+                        <h3 class="modal-title text-center" id="modalCenter-A">ท่านต้องการที่จะthe <b class=" text-success">อนุมัติ</b> คำขอนี้</h3>
+                    </div>
+                    <div class="modal-footer d-flex justify-content-lg-between">
+                        <button type="button" class="btn btn-outline-secondary btn-block" data-dismiss="modal">ยกเลิก</button>
+                        <button type="button" class="btn btn-success btn-block mt-0">อนุมัติคำขอ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bootstrap core JavaScript-->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Core plugin JavaScript-->
+        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+        <!-- Custom scripts for all pages-->
+        <script src="js/sb-admin-2.js"></script>
+
+        <!-- Datatable plugins -->
+        <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
+        <!-- SweetAlert plugins -->
+        <!--
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.2.0/sweetalert2.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.2.0/sweetalert2.all.min.js"></script>
+-->
+        <script>
+            /* <button class="test btn btn-danger">test</button> 
+                                                                                                                                                            $(document).on('click', '#approve', function(e) {
+                                                                                                                                                                swal({
+                                                                                                                                                                    title: '<strong>อนุมัติ?</strong>',
+                                                                                                                                                                    icon: 'success',
+                                                                                                                                                                    html: 'ท่านต้องการที่จะ <b style="color:green;">อนุมัติ</b> คำขอนี้',
+                                                                                                                                                                    showCloseButton: true,
+                                                                                                                                                                    showCancelButton: true,
+                                                                                                                                                                    focusConfirm: false,
+                                                                                                                                                                    confirmButtonColor: '#28a745',
+                                                                                                                                                                    cancelButtonColor: '#7c7c7c',
+                                                                                                                                                                    confirmButtonText: 'อนุมัติคำขอ',
+                                                                                                                                                                    cancelButtonText: 'ย้อนกลับ'
+                                                                                                                                                                })
+                                                                                                                                                            });
+                                                                                                                                                            $(document).on('click', '#reject', function(e) {
+                                                                                                                                                                swal({
+                                                                                                                                                                    title: '<strong>คำเตือน!</strong>',
+                                                                                                                                                                    icon: 'error',
+                                                                                                                                                                    html: 'ท่านต้องการที่จะthe <b style="color:red;">ไม่อนุมัติ</b> คำขอนี้',
+                                                                                                                                                                    showCloseButton: true,
+                                                                                                                                                                    showCancelButton: true,
+                                                                                                                                                                    focusConfirm: false,
+                                                                                                                                                                    confirmButtonColor: '#d33',
+                                                                                                                                                                    cancelButtonColor: '#7c7c7c',
+                                                                                                                                                                    confirmButtonText: 'ไม่อนุมัติคำขอ',
+                                                                                                                                                                    cancelButtonText: 'ย้อนกลับ'
+                                                                                                                                                                })
+                                                                                                                                                            });*/
+        </script>
+
+
+</body>
+
+</html>
