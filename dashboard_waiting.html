@@ -23,45 +23,6 @@
 
 <body id="page-top">
 
-    <!-- Navigation -->
-    <!--
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top pt-2">
-        <div class="container">
-            <a class="navbar-brand" href="#">Job Fair - Faculty of Engineering</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">หน้าหลัก</a>
-                    </li>
-                    <li class="nav-item mx-2">
-                        <a class="nav-link" href="#"><i class="far fa-user-circle mr-2"></i>K.Engineering</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
--->
-    <!-- Full Page Image Header with Vertically Centered Content -->
-    <!--
-    <header class="bg-head">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-12 text-center header-item">
-                    <div class="header-caption d-none d-md-block text-left">
-                        <h1 style="font-weight:500; font-size:48px">Put the Right Man <br> on the Right Job</h1>
-                        <hr class="col-3" style="border-top: 2px solid #fff; margin-left: 0px;">
-                        <h2 style="font-size:24px">KMUTT Engineering Online Job Fair</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-    -->
-
-
     <!-- Page Wrapper -->
     <div id="wrapper">
 
@@ -91,6 +52,13 @@
             <hr class="sidebar-divider">
             <!-- Nav Item - waiting -->
             <li class="nav-item">
+                <a class="nav-link" href="dashboard.html">
+                    <i class="fas fa-fw fa-pause-circle"></i>
+                    <span>รอการอนุมัติ</span></a>
+            </li>
+
+            <!-- Nav Item - approve -->
+            <li class="nav-item active">
                 <a class="nav-link" href="dashboard_waiting.html">
                     <i class="fas fa-fw fa-pause-circle"></i>
                     <span>รอการอนุมัติ</span></a>
@@ -110,13 +78,6 @@
                     <span>ไม่อนุมัติ</span></a>
             </li>
 
-            <!-- Divider -->
-            <hr class="sidebar-divider d-none d-md-block">
-
-            <!-- Sidebar Toggler (Sidebar) -->
-            <div class="text-center d-none d-md-inline">
-                <button class="rounded-circle border-0" id="sidebarToggle"></button>
-            </div>
 
         </ul>
         <!-- End of Sidebar -->
@@ -166,7 +127,9 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mx-3 py-3 mb-3">
-                        <h1 class="h2 mb-0 text-engineer"><i class="fas fa-list"></i> คำขอทั้งหมด </h1>
+                        <h1 class="h2 mb-0 text-engineer"><i class="fas fa-list"></i> คำขอ
+                            <div class="badge badge-pill badge-primary px-3">รอการอนุมัติ</div>
+                        </h1>
                         <div class="form-group has-search mb-0">
                             <span class="fas fa-search form-control-feedback"></span>
                             <input type="text" class="form-control" value="" placeholder="ค้นหา ชื่อบริษัท">
@@ -271,7 +234,7 @@
                                                 <td>สินค้าอุตสาหกรรม</td>
                                                 <!-- Status -->
                                                 <td>
-                                                    <div class="badge badge-pill badge-success w-50">อนุมัติ</div>
+                                                    <div class="badge badge-pill badge-primary w-50">รอการอนุมัติ</div>
                                                 </td>
                                                 <!-- View Btn -->
                                                 <td>
@@ -300,7 +263,7 @@
                                                 <td>สินค้าอุตสาหกรรม</td>
                                                 <!-- Status -->
                                                 <td>
-                                                    <div class="badge badge-pill badge-danger w-50">ไม่อนุมัติ</div>
+                                                    <div class="badge badge-pill badge-primary w-50">รอการอนุมัติ</div>
                                                 </td>
                                                 <!-- View Btn -->
                                                 <td>
@@ -358,7 +321,7 @@
                                                 <td>สินค้าอุตสาหกรรม</td>
                                                 <!-- Status -->
                                                 <td>
-                                                    <div class="badge badge-pill badge-success w-50">อนุมัติ</div>
+                                                    <div class="badge badge-pill badge-primary w-50">รอการอนุมัติ</div>
                                                 </td>
                                                 <!-- View Btn -->
                                                 <td>
@@ -387,7 +350,7 @@
                                                 <td>สินค้าอุตสาหกรรม</td>
                                                 <!-- Status -->
                                                 <td>
-                                                    <div class="badge badge-pill badge-danger w-50">ไม่อนุมัติ</div>
+                                                    <div class="badge badge-pill badge-primary w-50">รอการอนุมัติ</div>
                                                 </td>
                                                 <!-- View Btn -->
                                                 <td>
@@ -445,7 +408,7 @@
                                                 <td>สินค้าอุตสาหกรรม</td>
                                                 <!-- Status -->
                                                 <td>
-                                                    <div class="badge badge-pill badge-success w-50">อนุมัติ</div>
+                                                    <div class="badge badge-pill badge-primary w-50">รอการอนุมัติ</div>
                                                 </td>
                                                 <!-- View Btn -->
                                                 <td>
@@ -474,7 +437,7 @@
                                                 <td>สินค้าอุตสาหกรรม</td>
                                                 <!-- Status -->
                                                 <td>
-                                                    <div class="badge badge-pill badge-danger w-50">ไม่อนุมัติ</div>
+                                                    <div class="badge badge-pill badge-primary w-50">รอการอนุมัติ</div>
                                                 </td>
                                                 <!-- View Btn -->
                                                 <td>
@@ -533,7 +496,7 @@
                                                 <td>สินค้าอุตสาหกรรม</td>
                                                 <!-- Status -->
                                                 <td>
-                                                    <div class="badge badge-pill badge-success w-50">อนุมัติ</div>
+                                                    <div class="badge badge-pill badge-primary w-50">รอการอนุมัติ</div>
                                                 </td>
                                                 <!-- View Btn -->
                                                 <td>
@@ -562,7 +525,7 @@
                                                 <td>สินค้าอุตสาหกรรม</td>
                                                 <!-- Status -->
                                                 <td>
-                                                    <div class="badge badge-pill badge-danger w-50">ไม่อนุมัติ</div>
+                                                    <div class="badge badge-pill badge-primary w-50">รอการอนุมัติ</div>
                                                 </td>
                                                 <!-- View Btn -->
                                                 <td>
@@ -622,16 +585,6 @@
         <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
 
         <script>
-            $(window).scroll(function() {
-                if ($(window).scrollTop() >= 100) {
-                    $('nav').addClass('navbar-light bg-light shadow ');
-                    $('nav').removeClass('navbar-dark shadow');
-                } else {
-                    $('nav').addClass('navbar-dark shadow');
-                    $('nav').removeClass('bg-light shadow ');
-                }
-            });
-
             $(document).ready(function() {
                 $("#list").DataTable({
                     aaSorting: [],
@@ -659,22 +612,6 @@
 
                 $('[data-toggle="tooltip"]').tooltip();
             });
-
-            /* <button class="test btn btn-danger">test</button> 
-            $(document).on('click', '.approve', function(e) {
-                swal(
-                    'Success',
-                    'You clicked the <b style="color:green;">Success</b> button!',
-                    'success'
-                )
-            });
-            $(document).on('click', '.reject', function(e) {
-                swal(
-                    'Warning!',
-                    'You clicked the <b style="color:coral;">warning</b> button!',
-                    'warning'
-                )
-            });*/
         </script>
 
 
