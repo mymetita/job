@@ -988,3 +988,29 @@ table.dataTable {
 .modal-footer {
     border-top: 0px solid #e3e6f0;
 }
+
+.float {
+    position: fixed;
+    width: 160px;
+    height: 40px;
+    bottom: 40px;
+    right: 100px;
+    background-color: #A72C32;
+    color: #FFF;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+}
+
+.float-over {
+    position: fixed;
+    width: 120px;
+    height: 90px;
+    bottom: 80px;
+    right: 120px;
+    text-align: center;
+}
+
+.my-float {
+    margin-bottom: 22px;
+}
