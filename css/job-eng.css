@@ -76,6 +76,12 @@ body {
     background-size: cover;
 }
 
+.bg-verify-image {
+    background: url(../img/KMUTT/20190926_171218.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
 .black-bg {
     background-color: #414042;
 }
