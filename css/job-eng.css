@@ -1000,6 +1000,7 @@ table.dataTable {
     border-radius: 25px;
     text-align: center;
     box-shadow: 2px 2px 3px #999;
+    z-index: 2;
 }
 
 .float-over {
@@ -1009,8 +1010,19 @@ table.dataTable {
     bottom: 80px;
     right: 120px;
     text-align: center;
+    z-index: 2;
 }
 
 .my-float {
     margin-bottom: 22px;
+}
+
+.box {
+    background-color: rgba(95, 95, 95, 0.3);
+    text-align: center;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    z-index: 1;
+    left: 0px;
 }
