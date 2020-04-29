@@ -1028,6 +1028,40 @@ table.dataTable {
     margin-bottom: 22px;
 }
 
+
+/* Portrait and Landscape */
+
+
+/*https://css-tricks.com/snippets/css/media-queries-for-standard-devices/*/
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+    .float {
+        position: fixed;
+        width: 160px;
+        height: 40px;
+        bottom: 40px;
+        left: 20px;
+        background-color: #A72C32;
+        color: #FFF;
+        border-radius: 25px;
+        text-align: center;
+        box-shadow: 2px 2px 3px #999;
+        z-index: 2;
+    }
+    .float-over {
+        position: fixed;
+        width: 120px;
+        height: 90px;
+        bottom: 80px;
+        left: 40px;
+        text-align: center;
+        z-index: 2;
+    }
+    .my-float {
+        margin-bottom: 22px;
+    }
+}
+
 .box {
     background-color: rgba(95, 95, 95, 0.3);
     text-align: center;
